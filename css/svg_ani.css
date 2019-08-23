@@ -1,0 +1,108 @@
+.cls-1 {
+    fill: none;
+    transform: scale(0.9);
+    animation: fill-b 0.5s ease forwards 4s;
+}
+
+.cls-2 {
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 1px;
+}
+
+#main-visual {
+    fill: none;
+    animation: fill-b 0.5s ease forwards 4s;
+}
+
+#main-visual .p {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards;
+}
+
+#main-visual .o1 {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 0.3s;
+}
+
+#main-visual .r {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 0.6s;
+}
+
+#main-visual .t {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 0.9s;
+}
+
+#main-visual .l1 {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 1.2s;
+}
+
+#main-visual .l2 {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 1.5s;
+}
+
+#main-visual .f {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 1.8s;
+}
+
+#main-visual .o2 {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 2.1s;
+}
+
+#main-visual .l {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 2.4s;
+}
+
+#main-visual .i {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 2.7s;
+}
+
+#main-visual .o3 {
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anima 2s ease forwards 3.0s;
+}
+
+@keyframes line-anima {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-b {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: #fff;
+    }
+}
+
+.ie-img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
