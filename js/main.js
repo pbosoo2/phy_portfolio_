@@ -33,7 +33,7 @@ $(function () {
 
   // scroll
   var $menu = $('.main-menu li.menu'),
-      $contents = $('#contents > section');
+    $contents = $('#contents > section');
 
   console.log($contents);
 
@@ -56,17 +56,16 @@ $(function () {
     $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
   })
 
-  $(window).scroll(function(){
-    $contents.each(function(){
-        if($(this).offset().top <= $(window).scrollTop()){
-            var idx = $(this).index();
-            $menu.removeClass('on');
-            $menu.eq(idx).addClass('on');
-        }
+  $(window).scroll(function () {
+    $contents.each(function () {
+      if ($(this).offset().top <= $(window).scrollTop()) {
+        var idx = $(this).index();
+        $menu.removeClass('on');
+        $menu.eq(idx).addClass('on');
+      }
     });
-});
+  });
 
-출처: https://j07051.tistory.com/505 [흘러간다...];
 
   // top 버튼
   $('.scroll').click(function (x) {
@@ -87,11 +86,15 @@ $(function () {
 
   if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
     $('svg').css({
-      'display' : 'none'
+      'display': 'none'
     });
     $('.ie-img').css({
-      'display' : 'block'
+      'display': 'block'
     });
   }
+
+  $('.work a').click(function (x) {
+    x.preventDefault();
+  })
 
 });
